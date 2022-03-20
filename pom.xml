@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yhzdys.origami</groupId>
+    <artifactId>origami-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <description>The parent project of origami</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.encoding>UTF-8</project.build.encoding>
+    </properties>
+
+    <modules>
+        <module>origami-admin</module>
+        <module>origami-common</module>
+        <module>origami-config</module>
+        <module>origami-core</module>
+        <module>origami-filter</module>
+        <module>origami-registry</module>
+        <module>origami-start</module>
+    </modules>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.encoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
